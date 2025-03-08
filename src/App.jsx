@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <img src="/src/assets/deity-new.svg" alt="赫尔墨斯神像" className="deity-icon" />
+        <img src="./assets/deity-new.svg" alt="赫尔墨斯神像" className="deity-icon" />
         <h1>赫尔墨斯·鸡饭神殿</h1>
         <p className="subtitle">古希腊掌管鸡饭的神明将为您指引今日美食</p>
       </header>

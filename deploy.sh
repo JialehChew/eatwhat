@@ -17,6 +17,6 @@ git add -A
 git commit -m 'deploy'
 
 # 部署到 GitHub Pages
-git push -f git@github.com:Hermes-Chicken-Rice/hermes-chicken-rice.git main:gh-pages
+git push -f git@github.com:JialehChew/eatwhat.git main:gh-pages
 
 cd -
