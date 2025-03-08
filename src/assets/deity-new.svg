@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 光环背景 -->
+  <circle cx="256" cy="256" r="200" fill="url(#halo)" opacity="0.8"/>
+  
+  <!-- 神秘符文圆环 -->
+  <g transform="rotate(0 256 256)">
+    <circle cx="256" cy="256" r="180" stroke="url(#runeGradient)" stroke-width="2" stroke-dasharray="10 15" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 256 256" to="360 256 256" dur="30s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 人形轮廓 -->
+  <path d="M256 140c-22 0-40 18-40 40s18 40 40 40 40-18 40-40-18-40-40-40zm-60 100c-22 0-40 18-40 40v20c0 11 9 20 20 20h160c11 0 20-9 20-20v-20c0-22-18-40-40-40h-10c-8 7-18 12-30 12s-22-5-30-12h-50z" fill="url(#figureGradient)"/>
+  
+  <!-- 权杖 -->
+  <path d="M246 280l-40 120m60-120l40 120M256 280v140" stroke="url(#staffGradient)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <radialGradient id="halo" cx="256" cy="256" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    
+    <linearGradient id="runeGradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+    
+    <linearGradient id="figureGradient" x1="256" y1="140" x2="256" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    
+    <linearGradient id="staffGradient" x1="256" y1="280" x2="256" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+  </defs>
+</svg>

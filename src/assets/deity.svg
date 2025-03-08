@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- 光芒背景 -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#glow)"/>
+  
+  <!-- 橄榄枝环 -->
+  <g transform="translate(100 100)" stroke="#2c3e50" stroke-width="2" fill="none">
+    <path d="M0,-60 C33,-60 60,-33 60,0 C60,33 33,60 0,60 C-33,60 -60,33 -60,0 C-60,-33 -33,-60 0,-60"
+          stroke="#4CAF50" stroke-width="3" fill="none"/>
+    <!-- 橄榄叶装饰 -->
+    <g id="leaf" transform="rotate(0)">
+      <path d="M-65,0 Q-60,-8 -55,0 Q-60,8 -65,0 Z" fill="#4CAF50"/>
+    </g>
+    <use href="#leaf" transform="rotate(45)"/>
+    <use href="#leaf" transform="rotate(90)"/>
+    <use href="#leaf" transform="rotate(135)"/>
+    <use href="#leaf" transform="rotate(180)"/>
+    <use href="#leaf" transform="rotate(225)"/>
+    <use href="#leaf" transform="rotate(270)"/>
+    <use href="#leaf" transform="rotate(315)"/>
+  </g>
+  
+  <!-- 赫尔墨斯权杖 -->
+  <g transform="translate(100 100)">
+    <rect x="-3" y="-40" width="6" height="80" fill="#FFD700"/>
+    <g transform="translate(0 -35)">
+      <path d="M-15,-10 C-8,-15 8,-15 15,-10 C8,-5 -8,-5 -15,-10 Z" fill="#FFD700"/>
+      <path d="M-12,-8 C-6,-12 6,-12 12,-8 C6,-4 -6,-4 -12,-8" fill="#FFF"/>
+    </g>
+    <!-- 缠绕的蛇 -->
+    <path d="M0,-30 Q10,-25 0,-20 Q-10,-15 0,-10 Q10,-5 0,0 Q-10,5 0,10" 
+          stroke="#2c3e50" stroke-width="3" fill="none"/>
+    <path d="M0,-30 Q-10,-25 0,-20 Q10,-15 0,-10 Q-10,-5 0,0 Q10,5 0,10" 
+          stroke="#2c3e50" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- 装饰性圆环 -->
+  <circle cx="100" cy="100" r="45" stroke="#FFD700" stroke-width="2" fill="none" 
+          stroke-dasharray="4 2"/>
+</svg>
